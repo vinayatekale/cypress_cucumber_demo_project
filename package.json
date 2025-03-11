@@ -1,0 +1,74 @@
+{
+  "name": "cy_cucumber_demo_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:parallel": "cypress-parallel -s cy:run -t 3 -d 'cypress/e2e/integration/*.feature'",
+    "cy:run": "cypress run --browser electron --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "cypress-parallel": "^0.14.0",
+    "typescript": "^5.8.2"
+  },
+  "@badeball/cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e//step_definitions/*.{js,ts}",
+    "filterSpecs": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "json": {
+    "enabled": true
+  },
+  "html": {
+    "enabled": true,
+    "outputFolder": "cypress/reports/html",
+    "filename": "cucumber_report",
+    "reportTitle": "Cucumber Report",
+    "pageTitle": "Cucumber Report",
+    "customData": {
+      "title": "Run info",
+      "data": [
+        {
+          "label": "Project",
+          "value": "Custom project"
+        },
+        {
+          "label": "Release",
+          "value": "1.2.3"
+        },
+        {
+          "label": "Cycle",
+          "value": "B11221.34321"
+        },
+        {
+          "label": "Execution Start Time",
+          "value": "Nov 10th 2021, 02:31 PM EST"
+        },
+        {
+          "label": "Execution End Time",
+          "value": "Nov 10th 2021, 02:56 PM EST"
+        }
+      ]
+    }
+  },
+  "testFiles": "**/*.feature",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "@cypress/grep": "^4.1.0",
+    "cypress": "^14.1.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-on-fix": "^1.1.0",
+    "esbuild": "^0.25.1",
+    "multiple-cucumber-html-reporter": "^3.9.2"
+  }
+}

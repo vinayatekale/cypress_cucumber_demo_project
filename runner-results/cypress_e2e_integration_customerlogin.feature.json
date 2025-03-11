@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 3,
+  "passes": 3,
+  "pending": 0,
+  "failures": 0,
+  "start": "2025-03-11T21:15:58.647Z",
+  "duration": 7543,
+  "file": "cypress\\e2e\\integration\\customerlogin.feature"
+}

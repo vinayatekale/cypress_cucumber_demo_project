@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 2,
+  "passes": 2,
+  "pending": 0,
+  "failures": 0,
+  "start": "2025-03-11T21:15:58.648Z",
+  "duration": 7501,
+  "file": "cypress\\e2e\\integration\\managerlogin.feature"
+}
