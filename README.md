@@ -1,4 +1,4 @@
-This Cypress-Cucumber basic framework for UI, API tests.
+This is Cypress-Cucumber basic framework for UI, API tests.
 
 **Pre-requisites:**
 1. Nodejs
